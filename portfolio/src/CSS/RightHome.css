@@ -1,0 +1,12 @@
+.downloadButton{
+    color: white;
+}
+.downloadIcon{
+    font-size: 30px;
+    color: white;
+}
+.downloadButton:hover ~
+.downloadIcon{
+    overflow-x: hidden;
+    animation: animateDown infinite 1.5s;
+}
