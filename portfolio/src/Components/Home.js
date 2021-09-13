@@ -1,13 +1,13 @@
 import React from 'react'
 import RightHome from './RightHome'
 import '../CSS/Home.css'
-
+import DevIcon from '../Assets/devIcon.png'
 function Home() {
     return (
         <div className="container mt-2 d-flex w-100 row justify-content-between">
             <div className="col-2">
                 <img className="image"
-                 src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Oscar"/>
+                 src="https://icon-library.com/images/web-development-icon-png/web-development-icon-png-28.jpg" alt="Oscar"/>
             </div>
             <div className="col-8">
                 <RightHome/>

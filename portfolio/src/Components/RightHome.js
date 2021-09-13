@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineDownload } from 'react-icons/ai';
+import { AiOutlineDownload,AiOutlineLinkedin,AiOutlineGithub } from 'react-icons/ai';
 import pdf from '../Assets/CV_OscarFernandezSanchez.pdf';
 import '../CSS/RightHome.css';
 import CarouselImage from './CarouselImage';
@@ -32,6 +32,18 @@ function RightHome() {
             <p>Languages: Spanish(Native) English(High) Portuguese(Basic)</p>
 
             <a href={pdf} className="downloadButton btn bg-dark">Download my CV <AiOutlineDownload className="downloadIcon" /></a>
+            <div className="d-flex mx-auto row justify-content-between mt-3">
+                <div className="col">
+                    <a href="https://www.linkedin.com/in/óscar-fernández-sánchez-96123421a" target="_blank">
+                        <AiOutlineLinkedin className="downloadIcon" style={{color:"black"}}/>
+                    </a>
+                </div>
+                <div className="col">
+                    <a href="https://github.com/oscarfersan" target="_blank">
+                        <AiOutlineGithub className="downloadIcon" style={{color:"black"}}/>
+                    </a>
+                </div>
+            </div>
             <div id="carouselExampleSlidesOnly" class="carousel slide mt-3 w-75 mx-auto" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="1"/>

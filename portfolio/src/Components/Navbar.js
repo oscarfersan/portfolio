@@ -2,59 +2,64 @@ import React from 'react'
 import { BiHomeAlt, BiPhoneCall } from 'react-icons/bi';
 import { VscProject } from 'react-icons/vsc';
 import '../CSS/NavBar.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <p className="navbar-brand my-auto" >Óscar Fernández Sánchez</p>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <Link class="nav-link" aria-current="page" to="/">
-                            <label for="home">
-                                <input className="nav-input" type="radio" id="home" name="group" />
-                                <span className="nav-button">
-                                    <span className="nav-icon">
-                                        <BiHomeAlt />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <Link class="nav-link" aria-current="page" to="/">
+                                <label for="home">
+                                    <input className="nav-input" type="radio" id="home" name="group" />
+                                    <span className="nav-button">
+                                        <span className="nav-icon">
+                                            <BiHomeAlt />
+                                        </span>
+                                        <span className="nav-text">
+                                            Home
+                                        </span>
                                     </span>
-                                    <span className="nav-text">
-                                        Home
+                                </label>
+                            </Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link" aria-current="page" to="/projects">
+                                <label for="projects">
+                                    <input className="nav-input" type="radio" id="projects" name="group" />
+                                    <span className="nav-button">
+                                        <span className="nav-icon">
+                                            <VscProject />
+                                        </span>
+                                        <span className="nav-text">
+                                            Projects
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                        </Link>
-                    </li>
-                    <li class="nav-item">
-                        <Link class="nav-link" aria-current="page" to="/projects">
-                            <label for="projects">
-                                <input className="nav-input" type="radio" id="projects" name="group" />
-                                <span className="nav-button">
-                                    <span className="nav-icon">
-                                        <VscProject />
+                                </label>
+                            </Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link" aria-current="page" to="/contact">
+                                <label for="contact">
+                                    <input className="nav-input" type="radio" id="contact" name="group" />
+                                    <span className="nav-button">
+                                        <span className="nav-icon">
+                                            <BiPhoneCall />
+                                        </span>
+                                        <span className="nav-text">
+                                            Contact
+                                        </span>
                                     </span>
-                                    <span className="nav-text">
-                                        Projects
-                                    </span>
-                                </span>
-                            </label>
-                        </Link>
-                    </li>
-                    <li class="nav-item">
-                        <Link class="nav-link" aria-current="page" to="/contact">
-                            <label for="contact">
-                                <input className="nav-input" type="radio" id="contact" name="group" />
-                                <span className="nav-button">
-                                    <span className="nav-icon">
-                                        <BiPhoneCall />
-                                    </span>
-                                    <span className="nav-text">
-                                        Contact
-                                    </span>
-                                </span>
-                            </label>
-                        </Link>
-                    </li>
-                </ul>
+                                </label>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     )
