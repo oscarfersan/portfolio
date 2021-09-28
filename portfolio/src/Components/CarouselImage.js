@@ -5,7 +5,7 @@ function CarouselImage(props) {
     return (
         <div className="d-flex row justify-content-around align-items-center align-content-center">
             {images.map((image)=>(
-                <img style={{width:"150px",maxHeight:"150px",filter:"grayscale(100%)"}} key={image.id} src={image.url} alt={image.url} />
+                <img style={{width:"150px",maxHeight:"150px",filter:"grayscale(100%)"}} className="img-fluid" key={image.id} src={image.url} alt={image.url} />
             ))}            
         </div>
     )
