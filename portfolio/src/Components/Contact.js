@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast';
 import emailjs from 'emailjs-com';
 import '../CSS/Contact.css'
+import useTitle from '../hooks/useSeo';
 function Contact() {
+    useTitle({description:'Send an email to Oscar!',title:'Contact'});
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");

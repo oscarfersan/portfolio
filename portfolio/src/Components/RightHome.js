@@ -15,8 +15,8 @@ function RightHome() {
             {id:2,url:'http://assets.stickpng.com/images/584815fdcef1014c0b5e497a.png'},
         ],
         [
-            {id:1,url:'http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png'},
-            {id:2,url:'http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png'},
+            {id:1,url:'https://w7.pngwing.com/pngs/578/816/png-transparent-java-class-file-java-platform-standard-edition-java-development-kit-java-runtime-environment-coffee-jar-text-class-orange-thumbnail.png'},
+            {id:2,url:'https://e7.pngegg.com/pngimages/621/411/png-clipart-computer-icons-python-anaconda-anaconda-angle-other-thumbnail.png'},
             {id:3,url:'https://www.vhv.rs/dpng/d/313-3133777_javascript-transparent-background-svg-hd-png-download.png'}
         ],
         [
